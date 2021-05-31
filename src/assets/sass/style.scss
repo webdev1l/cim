@@ -1,5 +1,7 @@
-/* ===== Default styles ===== */
-@import "reset";
+/* ===== Bootstrap ===== */
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 /* ===== Template vars ===== */
 @import "vars";
@@ -7,12 +9,21 @@
 /* ===== Fonts ===== */
 @import "fonts";
 
-body {
-
-}
-
 /* ===== SCSS Section ===== */
+@import "./blocks/hero.scss";
 
 
 /* ===== SCSS Blocks ===== */
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/btn.scss";
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}

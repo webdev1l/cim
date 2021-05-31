@@ -1,15 +1,8 @@
 {
-  "name": "gulp-start",
+  "name": "cim-html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webdev1l/gulp-start.git"
-  },
   "keywords": [
     "gulp",
     "start",
@@ -18,10 +11,6 @@
   ],
   "author": "webdev1l",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/webdev1l/gulp-start/issues"
-  },
-  "homepage": "https://github.com/webdev1l/gulp-start#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
@@ -37,6 +26,10 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1"
   }
 }
