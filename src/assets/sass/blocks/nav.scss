@@ -4,10 +4,10 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-
     &__link {
+        text-decoration: none;
+        color: inherit;
         margin-right: 65px;
-
         transition: all .15s ease-out;
         &:hover {
             color: $primary;

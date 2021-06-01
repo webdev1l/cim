@@ -1,4 +1,6 @@
 .hero {
+    padding-top: 92px;
+
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
     background-color: $bg;
@@ -21,14 +23,12 @@
         letter-spacing: 0.3px;
         margin-bottom: 59px;
     }
-
     &__bg-image  {
         display: block;
-
         object-fit: cover;
-        max-height: 512px;
+        max-height: 100%;
         position: absolute;
-        right: 15px;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;

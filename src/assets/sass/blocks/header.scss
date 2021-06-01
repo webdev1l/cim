@@ -1,9 +1,11 @@
 .header {
     padding: 23px 0;
-    background: #fff;
+    background: $white;
     width: 100%;
-
+    position: fixed;
+    z-index: 1000;
     &__icon {
+        padding: 0;
         width: 66px;
         height: 28px;
     }
