@@ -11,9 +11,11 @@ const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
-const webp = require("gulp-webp");
+const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
+const babel = require("gulp-babel")
+
 const browsersync = require("browser-sync").create();
 
 /* Paths */
@@ -108,6 +110,9 @@ function js() {
   return src(path.src.js, { base: "./src/assets/js/" })
     .pipe(plumber())
     .pipe(rigger())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest(path.build.js))
     .pipe(uglify())
     .pipe(
@@ -122,7 +127,6 @@ function js() {
 
 function images() {
   return src(path.src.images)
-    .pipe(webp())
     .pipe(dest(path.build.images));
 }
 

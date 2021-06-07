@@ -1,0 +1,14 @@
+.location {
+  padding: 70px 0 70px 0;
+
+  &__address {
+    margin-top: 38px;
+
+    &-logo {
+      margin-right: 24px;
+      width: 24px;
+      height: 24px;
+      stroke: $body;
+    }
+  }
+}

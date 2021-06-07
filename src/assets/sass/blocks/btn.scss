@@ -1,31 +1,55 @@
 .btn {
-    font-size: .875rem;
-    font-weight: 700;
-    line-height: 18px;
-    padding: .687rem 0 .812rem 0;
-    letter-spacing: 0.3px;
-    border:none;
-    transition: all .2s ease-out;
-    a, a:hover, a:visited {
-        color: inherit;
-        text-decoration: none;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 18px;
+  padding: .687rem 0 .812rem 0;
+  letter-spacing: 0.3px;
+  border: none;
+  transition: all .2s ease-out;
+
+  a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-.btn.btn-light {
-    background: none;
-    border: 2px solid $primary;
-    color: $primary;
-    &:hover {
-        color: $bg-light;
-        background-color: $primary;
-    }
-}
+.btn-light {
+  background: none;
+  border: 2px solid $primary;
+  color: $primary;
 
-.btn.btn-primary {
-    background-color: $primary;
+  &:hover {
     color: $bg-light;
-    &:hover {
-        background-color: $primary-dark;
+    background-color: $primary;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: $bg-light;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.btn-logo {
+  padding: 11px 15px 13px 15px;
+  justify-content: space-between;
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: $primary;
+  }
+  &:hover {
+    svg {
+      stroke: $bg-light;
     }
+  }
 }
