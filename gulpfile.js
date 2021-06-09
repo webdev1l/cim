@@ -11,7 +11,7 @@ const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
-const imagemin = require("gulp-imagemin");
+const image = require("gulp-image");
 const del = require("del");
 const panini = require("panini");
 const babel = require("gulp-babel")
@@ -31,7 +31,7 @@ var path = {
     html: "src/*.html",
     js: "src/assets/js/*.js",
     css: "src/assets/sass/style.scss",
-    images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+    images: "src/assets/img/**/*.{jpg,png,gif,ico}",
     fonts: "src/assets/fonts/**/*.{ttf,woff,woff2}",
   },
   watch: {
@@ -127,6 +127,7 @@ function js() {
 
 function images() {
   return src(path.src.images)
+    .pipe(image())
     .pipe(dest(path.build.images));
 }
 

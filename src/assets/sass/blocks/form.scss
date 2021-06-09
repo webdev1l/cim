@@ -1,0 +1,34 @@
+.form {
+  background-color: $bg-light;
+  padding: 75px 0 75px;
+
+  &__input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: .3px;
+
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: $bg;
+    border: none;
+    outline: none;
+    color: $body;
+
+    padding: 11px 15px 13px;
+
+    &::placeholder {
+      color: $text-light;
+    }
+
+    &--special {
+      height: 85px;
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+  }
+}

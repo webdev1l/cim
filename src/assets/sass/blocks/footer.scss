@@ -10,12 +10,32 @@
   line-height: 22px;
   letter-spacing: 0.3px;
 
-  &__paragraph {
-
+  &--white {
+    color: $bg;
   }
 
-  span {
-    color: $bg;
-    padding-bottom: 22px;
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    fill: #ffffff;
+
+    transition: all .15s ease-out;
+    &-link {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        .footer__icon {
+          fill: rgba(234, 234, 234, 0.81);
+        }
+      }
+    }
+  }
+
+  &__powered-by {
+    padding-top: 83px;
+    a {
+      color: inherit;
+    }
   }
 }

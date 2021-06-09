@@ -58,7 +58,7 @@
     z-index: 2;
   }
 
-  &__btn {
+  &__icon {
     width: 24px;
     height: 24px;
     z-index: 2;
@@ -85,5 +85,9 @@
     height: 100%;
     z-index: 1;
     object-fit: cover;
+  }
+
+  &__btn {
+    margin-top: 20px;
   }
 }

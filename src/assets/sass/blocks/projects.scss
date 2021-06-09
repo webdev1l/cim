@@ -1,0 +1,54 @@
+.projects {
+  padding: 122px 0 70px;
+
+  .section__heading {
+    margin-bottom: 35px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  &__content {
+    background-color: $title;
+  }
+
+  &__item {
+    position: relative;
+    height: 291px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      transition: all .2s ease-out;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    z-index: 3;
+  }
+
+  &__date {
+    z-index: 3;
+  }
+}

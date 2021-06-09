@@ -17,3 +17,9 @@
         }
     }
 }
+
+@media all and (max-width: 991px) {
+    .nav__link {
+        margin-right: 20px;
+    }
+}

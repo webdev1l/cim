@@ -1,9 +1,20 @@
 .location {
   padding: 70px 0 70px 0;
+  background-color: $bg;
 
   &__address {
-    margin-top: 38px;
+    display: flex;
+    align-items: center;
 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
+    margin-top: 38px;
     &-logo {
       margin-right: 24px;
       width: 24px;
