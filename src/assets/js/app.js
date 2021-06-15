@@ -1,12 +1,8 @@
-let obj = {
-  a: 10,
-  b: 30,
-}
+const slideout = new Slideout({
+  'panel': document.getElementById('panel'),
+  'menu': document.getElementById('menu'),
+  'padding': 256,
+  'tolerance': 70,
+  'side': 'right'
+});
 
-const {a, b} = obj;
-
-console.log(obj);
-
-console.log(() => "Hello World!");
-
-console.log(a);

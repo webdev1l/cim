@@ -1,5 +1,4 @@
 .location {
-  padding: 70px 0 70px 0;
   background-color: $bg;
 
   &__address {
@@ -22,4 +21,8 @@
       stroke: $body;
     }
   }
+}
+
+@media all and (max-width: 768px) {
+  .ad
 }

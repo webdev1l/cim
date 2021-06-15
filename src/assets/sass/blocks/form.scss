@@ -1,6 +1,36 @@
 .form {
   background-color: $bg-light;
-  padding: 75px 0 75px;
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: .2px;
+
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    margin-right: 20px;
+
+    stroke: #4E4B66;
+    height: 24px;
+
+    &--phone {
+      width: 24px;
+    }
+
+    &--mail {
+      width: 26px;
+    }
+  }
 
   &__input {
     font-family: 'Open Sans', sans-serif;

@@ -1,15 +1,10 @@
 .news {
-  padding: 75px 0 60px 0;
+  padding-bottom: 60px;
   background-color: $bg;
 
   a {
     text-decoration: none;
     color: inherit;
-  }
-
-  .section__heading {
-    margin: 0 0 70px 0;
-    padding: 0;
   }
 
   &__item {

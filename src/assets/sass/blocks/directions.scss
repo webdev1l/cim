@@ -1,10 +1,4 @@
 .directions {
-  padding: 75px 0 70px 0;
-
-  .section__heading  {
-    margin-bottom: 70px;
-  }
-
   &__item {
     height: 256px;
     padding: 15px;
@@ -53,5 +47,20 @@
     z-index: 1;
     object-fit: cover;
   }
+
+  &__spoiler {
+    padding: 60px 90px 70px;
+    background-color: $bg;
+    margin-bottom: 30px;
+  }
 }
 
+@media all and (max-width: 768px) {
+  .directions {
+    background-color: $bg;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+}

@@ -6,15 +6,19 @@
 </head>
 <body>
 {{> sprites }}
-{{> header }}
+
 <!--=== Content ===-->
-{{> body }}
+{{> header }}
+<div>
+  {{> body }}
 
-{{> form }}
+  {{> form }}
 
-{{> footer }}
+  {{> footer }}
+</div>
 
 <!--=== Main JS Script ===-->
+<script src="assets/js/slideout.min.js"></script>
 <script src="assets/js/app.min.js"></script>
 </body>
 </html>

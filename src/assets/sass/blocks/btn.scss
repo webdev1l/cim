@@ -53,3 +53,10 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .btn {
+    font-size: 36px;
+    height: 104px;
+  }
+}

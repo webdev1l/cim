@@ -3,6 +3,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
+@import "../../../node_modules/slideout/index";
+
 /* ===== Template vars ===== */
 @import "vars";
 
@@ -18,6 +20,8 @@
 @import "blocks/insta";
 @import "blocks/about";
 @import "blocks/projects";
+@import "blocks/article";
+@import "blocks/partners";
 
 /* ===== SCSS Blocks ===== */
 @import "./blocks/header.scss";
@@ -40,6 +44,23 @@ body {
     font-style: normal;
     position: relative;
     min-height: 100vh;
+    color: $body;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+.section__title {
+    padding-top: 60px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .2px;
+    color: $title;
 }
 
 .section__heading {
@@ -50,4 +71,15 @@ body {
     line-height: 40px;
     letter-spacing: 0.2px;
     color: $body;
+    padding: 75px 0 70px;
+}
+
+@media all and (max-width: 768px) {
+    section {
+        padding-bottom: 100px;
+    }
+
+    .section__heading {
+        padding: 65px 0 60px;
+    }
 }

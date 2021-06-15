@@ -5,16 +5,34 @@
     position: fixed;
     z-index: 1000;
     &__icon {
+        display: block;
         padding: 0;
         width: 66px;
         height: 28px;
+
+        &-right {
+            display: block;
+            width: 96px;
+            height: 96px;
+        }
     }
 }
-
 
 @media all and (max-width: 768px) {
-    .header {
-        display: none;
+    .header__icon {
+        width: 141px;
+        height: 60px;
     }
 }
 
+@media all and (max-width: 576px) {
+    .header__icon {
+        width: 70px;
+        height: 30px;
+
+        &-right {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
