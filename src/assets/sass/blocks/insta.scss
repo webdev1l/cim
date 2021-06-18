@@ -1,3 +1,14 @@
 .insta {
 
 }
+
+@media all and (max-width: 768px) {
+  .insta {
+    background-color: $bg;
+    padding-bottom: 10px;
+  }
+
+  iframe {
+    margin-bottom: 15px;
+  }
+}

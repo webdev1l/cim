@@ -1,5 +1,5 @@
 .about {
-  padding: 158px 0 10px;
+  padding: 88px 0 10px;
 
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -8,11 +8,10 @@
 
   background-color: $bg;
 
-  .section__heading {
-    margin-bottom: 60px;
-  }
-
   &__image {
+    display: block;
+    max-width: 256px;
+    height: 325px;
     margin-bottom: 20px;
   }
 
@@ -35,5 +34,29 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .about {
+    background-color: #fff;
+
+    &__person {
+      align-items: center;
+    }
+    &__image {
+      display: block;
+      max-width: 320px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    &__name {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
   }
 }

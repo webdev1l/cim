@@ -7,9 +7,12 @@
 <body>
 {{> sprites }}
 
+{{> offside }}
+
 <!--=== Content ===-->
-{{> header }}
-<div>
+<div id="content">
+  {{> header }}
+
   {{> body }}
 
   {{> form }}
@@ -18,7 +21,7 @@
 </div>
 
 <!--=== Main JS Script ===-->
-<script src="assets/js/slideout.min.js"></script>
+<script src="assets/js/offside.min.js"></script>
 <script src="assets/js/app.min.js"></script>
 </body>
 </html>

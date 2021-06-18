@@ -21,8 +21,26 @@
       stroke: $body;
     }
   }
+
+  &__map {
+    height: 480px;
+  }
 }
 
 @media all and (max-width: 768px) {
-  .ad
+  .location {
+    background-color: #fff;
+
+    &__address {
+      margin: 25px 0 30px;
+
+      &-logo {
+        margin-right: 15px;
+      }
+    }
+
+    &__map {
+      height: 195px;
+    }
+  }
 }

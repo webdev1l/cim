@@ -35,6 +35,11 @@
       background-color: rgba(0, 116, 252, 1);
     }
 
+    &:hover .news__icon {
+      width: 24px;
+      height: 24px;
+    }
+
     &-header {
       display: flex;
       justify-content: space-between;
@@ -54,10 +59,12 @@
   }
 
   &__icon {
-    width: 24px;
-    height: 24px;
+    width: 0;
+    height: 0;
     z-index: 2;
     stroke: #FFFFFF;
+
+    transition: all .15s ease-out;
   }
 
   &__heading {
@@ -84,5 +91,26 @@
 
   &__btn {
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .news {
+    background-color: #FFFFFF;
+
+    padding-bottom: 40px;
+
+    &__item {
+      margin-bottom: 15px;
+      height: 220px;
+    }
+
+    &-date {
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    justify-content: space-evenly;
   }
 }

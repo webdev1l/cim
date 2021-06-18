@@ -36,7 +36,9 @@
   "dependencies": {
     "bootstrap": "^5.0.1",
     "hamburgers": "^1.1.3",
+    "offside-js": "^1.4.0",
     "sidebarjs": "^8.0.0",
-    "slideout": "^1.0.1"
+    "slideout": "^1.0.1",
+    "toolslide.js": "^1.1.3"
   }
 }

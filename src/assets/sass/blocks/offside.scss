@@ -1,0 +1,54 @@
+.offside {
+  padding: 22px;
+  background-color: #fff;
+  z-index: 10001;
+  &.is-open {
+    width: 65%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    stroke: $title;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    color: $title;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color .2s ease-out;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+
+
+

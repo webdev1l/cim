@@ -127,7 +127,7 @@ function js() {
 
 function images() {
   return src(path.src.images)
-    //.pipe(image())
+    .pipe(image())
     .pipe(dest(path.build.images));
 }
 

@@ -3,7 +3,7 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
-@import "../../../node_modules/slideout/index";
+@import "../../../node_modules/offside-js/dist/offside";
 
 /* ===== Template vars ===== */
 @import "vars";
@@ -28,6 +28,7 @@
 @import "./blocks/nav.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/offside.scss";
 
 [hidden] {
     display: none;
@@ -45,6 +46,27 @@ body {
     position: relative;
     min-height: 100vh;
     color: $body;
+}
+
+#content {
+    min-height: 100vh;
+    &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        z-index: 10000;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
+body.offside-js--is-open {
+    overflow: hidden;
+}
+
+body.offside-js--is-open #content:before {
+    width: 100%;
+    height: 100%;
+
 }
 
 section {
@@ -76,10 +98,19 @@ section {
 
 @media all and (max-width: 768px) {
     section {
-        padding-bottom: 100px;
+        padding-bottom: 40px;
     }
 
     .section__heading {
-        padding: 65px 0 60px;
+        font-size: 18px;
+        padding: 20px 0 15px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .section__title {
+        padding: 20px 0 15px;
     }
 }
