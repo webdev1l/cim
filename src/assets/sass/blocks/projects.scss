@@ -1,12 +1,13 @@
 .projects {
-  padding: 122px 0 70px;
-
+  padding: 88px 0 70px;
+  background-color: $bg;
   a {
     text-decoration: none;
   }
 
   .section__heading {
-    margin-bottom: 35px;
+    padding: 35px 0 35px;
+    margin: 0;
   }
 
   .container-fluid {
@@ -67,7 +68,7 @@
   }
 
   &__text {
-    height: 55%;
+    height: 50%;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     letter-spacing: .2px;
@@ -81,11 +82,43 @@
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 36px;
+    transform: translateY(-50%);
   }
 
   &__date {
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .projects  {
+    padding: 80px 0 0;
+    background-color: #fff;
+
+    .section__heading {
+      padding: 15px 0 15px;
+    }
+
+    &__item {
+      height: 201px;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+      top: 15px;
+      right: 25px;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    &__date {
+      font-size: 14px;
+    }
   }
 }
