@@ -1,0 +1,14 @@
+.form-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  .btn.btn-primary {
+    border: 2px solid transparent;
+    cursor: inherit;
+    &:hover {
+      background-color: #0074fc;
+    }
+  }
+}

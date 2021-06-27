@@ -1,0 +1,106 @@
+---
+layout: form
+title: Инжиниринговый центр
+---
+
+<section class="form-section form-business">
+  <div class="container">
+    <div class="col-12 col-md-10">
+      <h2 class="form-section__heading">
+        Форма заявки на оказание услуг <br>
+        в Инжиниринговом Центре РГУ им. А.Н. Косыгина
+      </h2>
+      <div class="col-12">
+        <form action="#">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label for="name">
+                Ваше имя
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <input id="name" name="name" type="text" placeholder="Иван" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label for="email">
+                Электронная почта
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <input id="email" name="email" type="email" placeholder="ivan@mail.ru" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label for="phone">
+                Номер телефона
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <input id="phone" name="phone" type="tel" placeholder="+7" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label for="lab">
+                Выберите лабораторию
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="form-section__select-wrapper">
+                <select id="lab" class="form-section__select" name="lab" type="text">
+                  <option>3D-технологии</option>
+                  <option>Цифровая печать</option>
+                  <option>Научно-исследовательская лаборатория</option>
+                  <option>Производство пуговиц и фурнитуры</option>
+                  <option>Лазерная обработка</option>
+                  <option>ЧПУ-обработка</option>
+                  <option>Фелтинг (валяние)</option>
+                  <option>Устойчивая мода</option>
+                </select>
+                <svg class="form-section__select-icon">
+                  <use xlink:href="#select"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label for="desc">
+                Краткое описание проекта
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <textarea id="desc" name="desc" placeholder="Сообщение"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <label>
+                Файл ТЗ
+              </label>
+            </div>
+            <div class="col-12 col-md-4">
+              <label for="file-upload" class="form-section__file-upload">
+                Выбрать файл
+              </label>
+              <input id="file-upload" type="file"/>
+            </div>
+            <div class="col-12 col-md-5">
+              <span class="form-section__file-data"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-md-3 col-12 col-md-4">
+              <button class="btn btn-light">
+                <a href="#">Отправить</a>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

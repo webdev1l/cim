@@ -22,6 +22,7 @@
 @import "blocks/projects";
 @import "blocks/article";
 @import "blocks/partners";
+@import "blocks/form-section";
 
 /* ===== SCSS Blocks ===== */
 @import "./blocks/header.scss";
@@ -29,6 +30,8 @@
 @import "./blocks/btn.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/offside.scss";
+@import "./blocks/form-header.scss";
+
 
 [hidden] {
     display: none;

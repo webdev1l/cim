@@ -1,0 +1,120 @@
+.form-section {
+  padding: 166px 0 90px;
+
+  &__heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .2px;
+  }
+
+  form {
+    padding-top: 35px;
+
+    .row {
+      align-items: center;
+      margin-bottom: 25px;
+
+      &:nth-last-child(2) {
+        margin-bottom: 50px;
+      }
+    }
+
+    label {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: .2px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: none;
+      background: $bg;
+      color: $body;
+      outline: none;
+      padding: 10px 15px 13px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: .3px;
+
+      &::placeholder {
+        color: $text-light;
+      }
+    }
+
+    textarea {
+      min-height: 71px;
+    }
+
+    input[type="tel"] {
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .form-section__file-upload {
+      border: 2px solid $primary;
+      width: 100%;
+      text-align: center;
+      color: $primary;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: .3px;
+      padding: .687rem 0 .812rem 0;
+      cursor: pointer;
+
+      &:hover {
+        color: $bg-light;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &__file-data {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: .2px;
+    color: #B1B1B1;
+  }
+
+  &__select-wrapper {
+    position: relative;
+  }
+
+  &__select-icon {
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form-section__select {
+    appearance: none;
+    padding-right: 40px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .form-section {
+    padding: 93px 0 90px;
+
+    &__heading {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    form {
+      padding-top: 15px;
+    }
+
+    label {
+      margin-bottom: 15px;
+    }
+  }
+}
